@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    color: #918E9B;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #F55A5A;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-logo {
+    font-size: 25px;
+    padding-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-title {
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    max-width: 80%;
+    margin: 36px auto 0 auto;
+}
+
+.card .card--image {
+    width: 126px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 19px;
+}
+
+.card .card--text {
+    padding: 10px 0;
+}
+.card .card--location {
+    display: flex;
+    margin-bottom: 7px;
+    font-size: 10.24px;
+}
+
+.card .card--location i {
+    color: #F55A5A;
+    margin-right: 4px;
+}
+
+.card .location {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.17em;
+}
+
+.card .map-link {
+    line-height: 12px;
+    margin-left: 12px;
+}
+
+.card .card-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 14px;
+}
+
+.card .card-date {
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+    margin-bottom: 9px;
+}
+
+.card .card-description {
+    font-weight: 400;
+    font-size: 0.64rem;
+    line-height: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card .card--image {
+        width: 100%;
+    }
+
+    .card .card-description {
+        font-size: 11.5px;
+    }
 }
